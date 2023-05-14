@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constanst";
-import { logo, menu, close,_logo } from "../assets";
+import { logo, menu, close, _logo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -22,7 +22,44 @@ const Navbar = () => {
           }}
         >
           <img src={_logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-white text-[18px] font-bold cursor-pointer">
+            Kiril{" "}
+            <span className="sm:inline hidden">| Full Stack Developer</span>
+          </p>
         </Link>
+        <div className="flex flex-row">
+          <p>Follow Me - </p>
+          <div className="flex gap-3">
+            <a
+              href="https://www.facebook.com/haha.bege.3/"
+              target="_blank"
+              className="home__social-link"
+            >
+              <i className="uil uil-facebook-f"></i>
+            </a>
+            <a
+              href="https://github.com/KirilSZyapkov"
+              target="_blank"
+              className="home__social-link"
+            >
+              <i className="uil uil-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kiril-zyapkov-a80119220/"
+              target="_blank"
+              className="home__social-link"
+            >
+              <i className="uil uil-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {navLinks.map((link) => (
+            <li>
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
