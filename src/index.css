@@ -51,6 +51,13 @@
   transform: translateY(0.25rem);
 }
 
+.nav_link {
+  color: var(--skin-color);
+}
+.nav_link_hover:hover {
+  color: var(--skin-color);
+}
+
 *,
 *::before,
 *::after {

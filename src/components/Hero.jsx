@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <div>Hero</div>
-  )
-}
+  <div className="relative w-full h-screen mx-auto">
 
-export default Hero
+  </div>
+  );
+};
+
+export default Hero;
