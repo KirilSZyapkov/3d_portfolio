@@ -58,6 +58,10 @@
   color: var(--skin-color);
 }
 
+.dot_color{
+  background-color: var(--skin-color);
+}
+
 *,
 *::before,
 *::after {
@@ -163,12 +167,12 @@ select {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.red-gradient {
+  background: var(--skin-color);
+  background: linear-gradient(-90deg, var(--skin-color) 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    var(--skin-color) 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
