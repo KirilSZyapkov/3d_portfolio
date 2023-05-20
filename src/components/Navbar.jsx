@@ -29,7 +29,7 @@ const Navbar = () => {
           </p>
         </Link>
         <div className="flex flex-col md:flex-row text-[18px]">
-          <p className="md:block hidden">Follow Me -</p>
+          <p className="md:block hidden">Follow Me on -</p>
           <div className="flex justify-between items-center gap-3 pr-5">
             <a
               href="https://www.facebook.com/haha.bege.3/"

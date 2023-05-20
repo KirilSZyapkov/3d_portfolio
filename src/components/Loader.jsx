@@ -12,8 +12,8 @@ const Loader = () => {
           color: "#f1f1f1",
           fontWeight: 800,
           marginTop: 40,
-          position:"absolute",
-          top: "190px"
+          // position:"absolute",
+          // top: "190px"
         }}
       >
         {progress.toFixed(2)}%
