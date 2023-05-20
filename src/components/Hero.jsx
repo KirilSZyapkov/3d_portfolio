@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText}`}>
             Hi I'm <span className="text-[var(--skin-color)]">Kiril</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-w text-[var(--text-color)]`}>
+          <p className={`${styles.heroSubText} mt-w text-[var(--text-color)] md:text-[20px]`}>
             Welcome to{" "}
             <span className="text-[var(--skin-color)]">WebSolutions</span>! I
             specialize in creating exceptional web solutions using JS, React,
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
       </div>
       <ComputersCanvas />
-    </div>
+    </section>
   );
 };
 
