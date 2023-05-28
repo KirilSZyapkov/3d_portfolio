@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constanst";
-import { logo, menu, close, _logo } from "../assets";
+import { menu, close, _logo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -24,8 +24,7 @@ const Navbar = () => {
         >
           <img src={_logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            Kiril{" "}
-            <span className="sm:inline hidden">| WebSolutions</span>
+            Kiril <span className="sm:inline hidden">| WebSolutions</span>
           </p>
         </Link>
         <div className="flex flex-col md:flex-row text-[18px]">

@@ -8,7 +8,7 @@ import {
   html,
   css,
   reactjs,
-  redux,
+  next,
   tailwind,
   nodejs,
   mongodb,
@@ -45,17 +45,10 @@ const services = [
     title: "Web Developer",
     icon: web,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
+
   {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -81,8 +74,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: next,
   },
   {
     name: "Tailwind CSS",

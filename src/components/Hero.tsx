@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -38,7 +38,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-[--skin-color] mb-1"
+              className="w-3 h-3 rounded-full bg-[var(--skin-color)] mb-1"
             />
           </div>
         </a>
