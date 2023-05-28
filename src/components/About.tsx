@@ -165,6 +165,65 @@ const About = () => {
           </div>
         </div>
       )}
+      {toggleBack && (
+        <div
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.5" }}
+          className="fixed top-0 w-full h-full left-0 bottom-0 right-0 flex justify-center items-center"
+        >
+          <div
+            style={{ backgroundColor: "var(--box-color" }}
+            className="w-[500px] relative px-10 pb-10 p-16"
+          >
+            <i
+              style={{ color: "var(--skin-color)" }}
+              className="uil uil-times absolute top-6 right-6 text-2xl cursor-pointer"
+              onClick={() => setToggleBack(!toggleBack)}
+            ></i>
+
+            <h3 className="text-center text-2xl mb-[5px]">Backend Services</h3>
+            <p className="text-center px-0 py-4 mb-3">
+              I develop efficient and scalable back ends tailored to your
+              business needs and that are called to solve certain issues. By
+              utilizing the latest technologies, I build fault-tolerant web
+              solutions for various enterprises that process large volumes of
+              data. During back-end application development, I create a robust
+              back-end from scratch, optimize and refactor an app, and add new
+              features that extend the functionality.
+            </p>
+            <ul className="flex flex-col gap-2">
+              <li className="flex items-center gap-3">
+                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"></i>
+                <p className="services__modal-info">
+                  Creating Multi Page Web App
+                </p>
+              </li>
+              <li className="flex items-center gap-3">
+                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"></i>
+                <p className="services__modal-info">Database design</p>
+              </li>
+              <li className="flex items-center gap-3">
+                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"></i>
+                <p className="services__modal-info">Design endpoints</p>
+              </li>
+              <li className="flex items-center gap-3">
+                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"></i>
+                <p className="services__modal-info">Implement API</p>
+              </li>
+              <li className="flex items-center gap-3">
+                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"></i>
+                <p className="services__modal-info">
+                  Writing tests & Deployment
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
     </>
   );
 };
