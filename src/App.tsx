@@ -14,7 +14,7 @@ import {
 function App() {
   return (
     <BrowserRouter>
-      <div className="realative z-0 bg-primery">
+      <div className="realative bg-primery">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
@@ -23,7 +23,7 @@ function App() {
         <Skills />
         <Works />
         <Services />
-        <div className="relative z-0">
+        <div className="relative">
           <Contact />
           <StarsCanvas />
         </div>

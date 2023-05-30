@@ -41,11 +41,11 @@ const ServiceCard = ({
         className="w-full green-red-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
+          // options={{
+          //   max: 45,
+          //   scale: 1,
+          //   speed: 450,
+          // }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
@@ -90,10 +90,10 @@ const About = () => {
         life.
       </motion.p>
       <div className="mt-20 flex flex-wrap justify-evenly gap-10">
-        {services.map((service, index) => (
+        {services.map((service: serviceCardProps, i: number) => (
           <ServiceCard
             key={service.title}
-            index={index}
+            index={i}
             {...service}
             toggleBack={toggleBack}
             toggleWeb={toggleWeb}
@@ -171,8 +171,8 @@ const About = () => {
           className="fixed top-0 w-full h-full left-0 bottom-0 right-0 flex justify-center items-center"
         >
           <div
-            style={{ backgroundColor: "var(--box-color" }}
-            className="w-[500px] relative px-10 pb-10 p-16"
+            style={{ backgroundColor: "var(--box-color"}}
+            className="w-[500px] relative px-10 pb-10 p-16 mt-20"
           >
             <i
               style={{ color: "var(--skin-color)" }}
@@ -192,30 +192,40 @@ const About = () => {
             </p>
             <ul className="flex flex-col gap-2">
               <li className="flex items-center gap-3">
-                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
-                  className="uil uil-check-circle"></i>
+                <i
+                  style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"
+                ></i>
                 <p className="services__modal-info">
                   Creating Multi Page Web App
                 </p>
               </li>
               <li className="flex items-center gap-3">
-                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
-                  className="uil uil-check-circle"></i>
+                <i
+                  style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"
+                ></i>
                 <p className="services__modal-info">Database design</p>
               </li>
               <li className="flex items-center gap-3">
-                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
-                  className="uil uil-check-circle"></i>
+                <i
+                  style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"
+                ></i>
                 <p className="services__modal-info">Design endpoints</p>
               </li>
               <li className="flex items-center gap-3">
-                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
-                  className="uil uil-check-circle"></i>
+                <i
+                  style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"
+                ></i>
                 <p className="services__modal-info">Implement API</p>
               </li>
               <li className="flex items-center gap-3">
-                <i style={{ color: "var(--skin-color)", fontSize: "20px" }}
-                  className="uil uil-check-circle"></i>
+                <i
+                  style={{ color: "var(--skin-color)", fontSize: "20px" }}
+                  className="uil uil-check-circle"
+                ></i>
                 <p className="services__modal-info">
                   Writing tests & Deployment
                 </p>
