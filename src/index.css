@@ -58,9 +58,28 @@
   background-color: var(--skin-color);
 }
 
-.z_index {
-  z-index: 99999999;
+.section__title {
+  color: var(--skin-color);
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-3);
 }
+
+/* .portfolio__item-details {
+  margin-bottom: var(--mb-1-5);
+}
+.details__title {
+  margin-bottom: var(--mb-0-75);
+}
+.details__description {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-2);
+}
+.work__img {
+  border-radius: 0.5rem;
+  margin-bottom: var(--mb-1);
+  height: 174px;
+} */
 
 * {
   margin: 0;

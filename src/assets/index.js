@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import _logo from "./_logo.svg"
+import _logo from "./_logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -31,6 +31,13 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import car_forum from "./car_forum.png";
+import chatApp from "./chatApp.jpg";
+import myStorage from "./myStorage.png";
+import open_chat_ai from "./open_chat_ai.png";
+import picture_me from "./picture_me.png";
+
+
 export {
   logo,
   _logo,
@@ -61,4 +68,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  car_forum,
+  chatApp,
+  myStorage,
+  open_chat_ai,
+  picture_me,
+  
 };

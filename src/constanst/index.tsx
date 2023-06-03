@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  car_forum,
+  chatApp,
+  myStorage,
+  open_chat_ai,
+  picture_me,
 } from "../assets";
 
 export const navLinks = [
@@ -88,7 +93,7 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
-  }
+  },
 ];
 
 const experiences = [
@@ -175,67 +180,52 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    _id: 0,
+    title: "Forum",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+      "A web site for finding everithing for cars or publish your own article. Joining diferent forums or create your own one.",
+    image: car_forum,
+    tags: ["React", "Back4App"],
+    liveDemo: "https://cars-forum.netlify.app/",
+    source: "https://github.com/KirilSZyapkov/blog-cars",
   },
   {
-    name: "Job IT",
+    _id: 1,
+    title: "Picture Me",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+      "Social Media App using the following features, such as Google Authentication, create, edit, delete and save posts, like and comment on other people's posts, search and filter images.",
+    image: picture_me,
+    tags: ["React", "Back4App", "Firebase Auth"],
+    liveDemo: "https://picture-me-react-project.netlify.app/",
+    source: "https://github.com/KirilSZyapkov/picture_me",
   },
   {
-    name: "Trip Guide",
+    _id: 2,
+    title: "My Storage",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+      "A Goole Drive clone app using Firebase Authentication, Firebase storage and Database. You can create an accound and store your files and creating new folders.",
+    image: myStorage,
+    tags: ["React", "Firebase Storage", "Firebase Auth", "Firebase Database"],
+    liveDemo: "",
+    source: "https://github.com/KirilSZyapkov/my-storage",
+  },
+  {
+    _id: 3,
+    title: "Chat App",
+    description: "A chat app that allows to communicate with your friends.",
+    image: chatApp,
+    tags: ["React", "Chat Engine"],
+    liveDemo: "https://chat-app-uni.netlify.app/",
+    source: "https://github.com/KirilSZyapkov/chat-app",
+  },
+  {
+    _id: 4,
+    title: "Open Chat AI",
+    description: "An AI GPT chat app using the latest OpenAI technology.",
+    image:open_chat_ai,
+    tags: ["Vnila JS", "Express", "OpenAI"],
+    liveDemo: "https://open-chat-ai.netlify.app/",
+    source: "https://github.com/KirilSZyapkov/open_chat_ai",
   },
 ];
 
