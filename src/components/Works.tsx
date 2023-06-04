@@ -5,7 +5,6 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constanst";
 import { fadeIn, textVariant } from "../utils/motion";
-import { useState } from "react";
 
 type projectCardProps = {
   _id: number;
@@ -62,7 +61,7 @@ const ProjectCard = ({
                 onClick={() => window.open(liveDemo, "_blank")}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
-                <h1>{"</>"}</h1>
+                <h1 className="text-[10px]">https//</h1>
               </div>
             </div>
           </div>
@@ -102,7 +101,7 @@ const Works = () => {
       </div>
       <div className="mt-20 flex flex-wrap gap-7 -z-10">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} {...project} index={index} />
+          <ProjectCard key={`project-${project._id}`} {...project} index={index} />
         ))}
       </div>
     </section>

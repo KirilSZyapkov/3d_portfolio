@@ -11,7 +11,7 @@ type technologieType = {
 const Skills = () => {
   return (
     <>
-      <h1 className="section__title">My Experience</h1>
+      <h1 className="section__title">Experience</h1>
       <div className="flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((technologie: technologieType) => (
           <div className="w-28 h-28" key={technologie.name}>

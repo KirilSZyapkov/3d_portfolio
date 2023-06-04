@@ -4,7 +4,6 @@ import {
   Hero,
   Navbar,
   About,
-  Services,
   Skills,
   Works,
   Contact,
@@ -22,7 +21,7 @@ function App() {
         <About />
         <Skills />
         <Works />
-        <Services />
+        
         <div className="relative">
           <Contact />
           <StarsCanvas />
