@@ -17,8 +17,26 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: ChangeEvent) => {};
-  const handleSubmint = (e: FormEvent) => {};
+  const handleChange = (e: ChangeEvent) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmint = (e: FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      "service_2b2dv69",
+      "template_jrxnf6h",
+      {
+        from_name: form.name,
+        to_name: "Kiril",
+        from_email: form.email,
+        to_email: "appdeveloperjs47@gmail.com",
+        message: form.message,
+      },
+      "user_cHmfISm7sED5Rr2y3J6Uv"
+    );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex  gap-10 overflow-hidden">
