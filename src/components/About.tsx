@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 

@@ -8,31 +8,32 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
-
+  const [disable, setDisable] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: ChangeEvent) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
   const handleSubmint = (e: FormEvent) => {
     e.preventDefault();
+    setDisable(true);
     setLoading(true);
     emailjs
       .send(
         "service_2b2dv69",
-        "template_jrxnf6h",
+        "template_lpz2ikm",
         {
-          from: form.name,
-          to_name: "Kiril",
-          from_email: form.email,
-          to_email: "appdeveloperjs47@gmail.com",
+          name: form.name,
+
+          email: form.email,
+
           message: form.message,
         },
         "user_cHmfISm7sED5Rr2y3J6Uv"
@@ -107,7 +108,8 @@ const Contact = () => {
           </label>
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 text-[var(--skin-color)] outline-none w-fit font-bold shadow-md shadow-primary rounded-xl"
+            className={`disabled:opacity-25 bg-tertiary py-3 px-8 text-[var(--skin-color)] outline-none w-fit font-bold shadow-md shadow-primary rounded-xl`}
+            disabled={disable ? true : false}
           >
             {loading ? "Sending..." : "Send"}
           </button>
