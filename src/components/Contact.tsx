@@ -25,6 +25,13 @@ const Contact = () => {
     e.preventDefault();
     setDisable(true);
     setLoading(true);
+
+    if (form.name === "" || form.email === "") {
+      alert("Please fill all fields!");
+      setLoading(false);
+      setDisable(false);
+      return;
+    }
     emailjs
       .send(
         "service_2b2dv69",
@@ -40,6 +47,8 @@ const Contact = () => {
       )
       .then(() => {
         setLoading(false);
+        setDisable(false);
+
         alert(
           "Email send successfully! I'll get back to you as soon as posible!"
         );
@@ -51,6 +60,8 @@ const Contact = () => {
           (error: ErrorEvent) => {
             console.log(error);
             alert("Something went wrong!");
+            setDisable(true);
+            setLoading(true);
           };
       });
   };
@@ -76,6 +87,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
+              required
               type="text"
               name="name"
               value={form.name}
@@ -87,6 +99,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input
+              required
               type="email"
               name="email"
               value={form.email}
