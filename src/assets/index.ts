@@ -24,6 +24,7 @@ import chatApp from "./chatApp.jpg";
 import myStorage from "./myStorage.png";
 import open_chat_ai from "./open_chat_ai.png";
 import picture_me from "./picture_me.png";
+import e_shop from "./e_shop.png";
 
 
 export {
@@ -50,5 +51,5 @@ export {
   myStorage,
   open_chat_ai,
   picture_me,
-  
+  e_shop
 };

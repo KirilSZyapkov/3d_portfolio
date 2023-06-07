@@ -71,9 +71,7 @@ const ProjectCard = ({
             </h3>
             <p className="mt-2 text-secondary text-[14px]">{description}</p>
           </div>
-          <div className="mt-4 flex flex-wrap gap-2">
-          #{tags.join(", ")}
-          </div>
+          <div className="mt-4 flex flex-wrap gap-2">{tags.join(", ")}</div>
         </Tilt>
       </motion.div>
     </>
@@ -84,7 +82,6 @@ const Works = () => {
   return (
     <section className="pt-[55px] relative z-0">
       <motion.div variants={textVariant(1)}>
-        <p className={`${styles.sectionSubText} text-center`}>My Portfolio</p>
         <h1 className="section__title nav_link">Recent Works</h1>
       </motion.div>
       <div className="w-full flex">
@@ -101,7 +98,11 @@ const Works = () => {
       </div>
       <div className="mt-20 flex flex-wrap gap-7 -z-10">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${project._id}`} {...project} index={index} />
+          <ProjectCard
+            key={`project-${project._id}`}
+            {...project}
+            index={index}
+          />
         ))}
       </div>
     </section>

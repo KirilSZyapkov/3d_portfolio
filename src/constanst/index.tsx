@@ -15,6 +15,7 @@ import {
   myStorage,
   open_chat_ai,
   picture_me,
+  e_shop
 } from "../assets";
 
 export const navLinks = [
@@ -90,7 +91,7 @@ const projects = [
     description:
       "A web site for finding everithing for cars or publish your own article. Joining diferent forums or create your own one.",
     image: car_forum,
-    tags: ["React", "Back4App"],
+    tags: ["#React", "#Back4App"],
     liveDemo: "https://cars-forum.netlify.app/",
     source: "https://github.com/KirilSZyapkov/blog-cars",
   },
@@ -100,7 +101,7 @@ const projects = [
     description:
       "Social Media App using the following features, such as Google Authentication, create, edit, delete and save posts, like and comment on other people's posts, search and filter images.",
     image: picture_me,
-    tags: ["React", "Back4App", "Firebase Auth"],
+    tags: ["#React", "#Back4App", "#Firebase Auth"],
     liveDemo: "https://picture-me-react-project.netlify.app/",
     source: "https://github.com/KirilSZyapkov/picture_me",
   },
@@ -110,7 +111,12 @@ const projects = [
     description:
       "A Goole Drive clone app using Firebase Authentication, Firebase storage and Database. You can create an accound and store your files and creating new folders.",
     image: myStorage,
-    tags: ["React", "Firebase Storage", "Firebase Auth", "Firebase Database"],
+    tags: [
+      "#React",
+      "#Firebase Storage",
+      "#Firebase Auth",
+      "#Firebase Database",
+    ],
     liveDemo: "",
     source: "https://github.com/KirilSZyapkov/my-storage",
   },
@@ -119,7 +125,7 @@ const projects = [
     title: "Chat App",
     description: "A chat app that allows to communicate with your friends.",
     image: chatApp,
-    tags: ["React", "Chat Engine"],
+    tags: ["#React", "#Chat Engine"],
     liveDemo: "https://chat-app-uni.netlify.app/",
     source: "https://github.com/KirilSZyapkov/chat-app",
   },
@@ -128,9 +134,19 @@ const projects = [
     title: "Open Chat AI",
     description: "An AI GPT chat app using the latest OpenAI technology.",
     image: open_chat_ai,
-    tags: ["Vnila JS", "Express", "OpenAI"],
+    tags: ["#Vnila JS", "#Express", "#OpenAI"],
     liveDemo: "https://open-chat-ai.netlify.app/",
     source: "https://github.com/KirilSZyapkov/open_chat_ai",
+  },
+  {
+    _id: 5,
+    title: "E Shop",
+    description:
+      "Small e-shop with open cart allowing you to add items you like to buy. A payment system is also integrated which alows you to make real payments with cards.",
+    image: e_shop,
+    tags: ["#React JS", "#Express", "#Stripe, #TypeScript"],
+    liveDemo: "",
+    source: "",
   },
 ];
 
