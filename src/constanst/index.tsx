@@ -145,8 +145,8 @@ const projects = [
       "Small e-shop with open cart allowing you to add items you like to buy. A payment system is also integrated which alows you to make real payments with cards.",
     image: e_shop,
     tags: ["#React JS", "#Express", "#Stripe, #TypeScript"],
-    liveDemo: "",
-    source: "",
+    liveDemo: "https://e-shopche.netlify.app/",
+    source: "https://github.com/KirilSZyapkov/e_shop",
   },
 ];
 
