@@ -28,7 +28,6 @@ const Navbar = () => {
           </p>
         </Link>
         <div className="flex flex-col md:flex-row text-[18px]">
-          
           <div className="flex justify-between items-center gap-3 pr-5">
             <a
               href="https://www.facebook.com/haha.bege.3/"
@@ -45,7 +44,7 @@ const Navbar = () => {
               <i className="uil uil-github"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/kiril-zyapkov-a80119220/"
+              href="https://www.linkedin.com/in/kiril-zyapkov-a9a59a27a"
               target="_blank"
               className="home__social-link"
             >
